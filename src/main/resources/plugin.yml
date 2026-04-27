@@ -1,0 +1,18 @@
+name: FlyPlugin
+version: '1.0-SNAPSHOT'
+main: org.livius.flyPlugin.FlyPlugin
+api-version: '1.21'
+authors: [ Livius ]
+description: A fly plugin!
+commands:
+  fly:
+    description: Enables flymode.
+    usage: /<command>
+    permission: flyplugin.fly
+
+
+
+permissions:
+  flyplugin.fly:
+    description: Allows the player to use /fly
+    default: op
