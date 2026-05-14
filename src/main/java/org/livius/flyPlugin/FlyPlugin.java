@@ -9,7 +9,8 @@ import java.util.ArrayList;
 public final class FlyPlugin extends JavaPlugin {
     @Override
     public void onEnable() {
-        getCommand("fly").setExecutor(new FlyCommand());
+        saveConfig();
+        getCommand("fly").setExecutor(new FlyCommand(this));
     }
 
     @Override
